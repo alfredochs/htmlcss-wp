@@ -2,6 +2,7 @@
     margin: auto;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* .clearfix::after {
@@ -15,7 +16,6 @@
     width: 106px;
     height: 44px;
     margin-bottom: 20px;
-
 }
 .container{
     width: 850px;
@@ -32,6 +32,8 @@ li{
     /* border: 1px solid; */
     padding: 10px 10px;
     text-align: center;
+    border-radius: 6px;
+
 }
 a{
     text-decoration: none;
@@ -42,22 +44,29 @@ a{
 nav ul li a:hover {
     color: black;
     background-color: lightgray;
+    border-radius: 6px;
+
   }
 /* BODY */
 /* Section HERO */
+
 section{
     background-image: url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 400px;
+    position: relative;
+    border-radius: 10px;
 }
 
 .container-hero-text{
     width: 50%;
-    margin-left: 70px;
-    padding-top: 210px;
+    left: 70px;
+    top: 210px;
     color: white;
+    position: absolute;
+    z-index: 2;
 }
 
 /* DIV colonne float */
@@ -65,11 +74,11 @@ section{
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 .header{
     margin-bottom: 20px;
-  }
+}
 .black{
     color: black;
 }
@@ -78,20 +87,36 @@ img{
     width: 100%;
     height: 150px;
     object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
   }
-  h5{
+h5{
       margin:10px 0;
   }
 .col{
     float: left;
     width: 20%;
 }
-/* .col img{
-    width: 100%;
-} */
+
 .middle{
     width: calc(60% - 40px);
     margin: 0 20px;
+}
+.black-back{
+    position: relative;
+}
+
+.black-back::after{
+    content:"";
+    display:block;
+    background-color:rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
 }
 
 /* FOOTER */
