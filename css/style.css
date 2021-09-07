@@ -24,7 +24,7 @@
 }
 ul{
     list-style: none;
-    margin: -14px;
+    margin: 0 -25px;
 }
 li{
     display: inline-block;
@@ -33,10 +33,15 @@ li{
     padding: 10px 10px;
     text-align: center;
 }
+a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #a3a3a3;
+}
 
 nav ul li a:hover {
-    color: blue;
-    background-color: red;
+    color: black;
+    background-color: lightgray;
   }
 /* BODY */
 /* Section HERO */
